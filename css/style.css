@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Header */
+.header{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    line-height: 1;
+}
+
+.header__logo{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: #005bff;
+    line-height: 1;
+    padding: 5px 10px;
+    border: 2px solid #005bff;
+    margin-right: 50px;
+}
+
+.catalog{
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-left: 10px;
+    width: 120px;
+    border: 2px solid #005bff;
+    background-color: #005bff;
+    color: #fff;
+    position: relative;
+    border-radius: 3px;
+}
+
+.catalog__button{
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.catalog__button i{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.catalog__list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -2px;
+    z-index: 1;
+    width: 122px;
+    border: 2px solid #005bff;
+    background-color: #fff;
+    color: #333;
+}
+
+.list{
+    padding-left: 10px;
+}
+.catalog__list li{
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+
+.search__input{
+    width: 500px;
+    border: 2px solid #005bff;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+
+.search__button{
+    background-color: #005bff;
+    color: #fff;
+    padding: 4px 20px;
+    border-color: transparent;
+    border-radius: 2px; 
+    line-height: 1; 
+    margin-right: 100px;
+}
+
+.search__button i{
+    margin-top: 10px;
+}
+
+.cart__button{
+    border: 2px solid #005bff;
+    color: #005bff;
+    border-radius: 2px;
+    padding: 10px 25px 4px 7px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart__icon{
+   font-size: 20px;
+}
+
+.cart__counter{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    z-index: 1;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: red;
+    line-height: 1.1;
+    border-radius: 10px;
+    padding: 1px 5px;
+}
+
+.cart{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+    z-index: 130;
+}
+
+.cart__inner{
+    position: relative;
+    margin: auto;
+    width: 1024px;
+    min-height: 200px;
+    max-height: 640px;
+    background-color: #fff;
+    padding: 25px;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+.cart__title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cart__total{
+    font-size: 20px;    
+}
+
+#cart__price{
+    color: green;
+}
+
+.cart__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    border: 1px solid grey;
+    margin: auto;
+    min-height: 100px;
+    max-height: 640px;
+    background-color: #fff;
+    padding: 25px;
+    overflow: auto;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+#cart--empty{
+    font-size: 24px;
+    margin-left: 330px;
+}
+
+.order__button{
+    background-color: #005bff;
+    color: #fff;
+    border: transparent;
+    font-size: 15px;
+    padding: 5px 20px;
+    margin: 30px 430px 0;
+    width: 150px;
+}
+
+.close__button{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 200;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #333;
+    line-height: 1.1;
+    cursor: pointer;
+}
+
+/* Main Section */
+.section{
+    display: flex;
+}
+
+/* Filter */
+.filter{
+    width: 15%;
+    margin: 0 80px 0 25px;
+}
+
+
+
+/* Cards */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.cards__item{
+    border: 1px solid #005bff;
+    width: 300px;
+    padding: 20px 20px;
+    
+}
+
+.item__img{
+    text-align: center;
+    position: relative;
+}
+.item__img img{
+    width: 250px;
+    height: 200px;
+}
+
+.item__sale{
+    position: absolute;
+    bottom: 5px;
+    left: -10px;
+    z-index: 1;
+
+    color: #fff;
+    background-color: #f91155;
+    border-radius: 4px;
+    padding: 4px 10px;
+    line-height: 1;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item__price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price--sale{
+    color: #f91155;
+
+}
+
+.price--through{
+    font-size: 16px;
+    color: #6f6f6f;
+    text-decoration: #f91155 line-through;
+}
+
+.price--real{
+
+}
+
+.item__title{
+    height: 50px;
+}
+
+.item__button{
+    background-color: #005bff;
+    color: #fff;
+    border: transparent;
+    font-size: 15px;
+    padding: 5px 40px;
+    margin: 10px 50px 0;
+    cursor: pointer;
+}
+
+
+
+

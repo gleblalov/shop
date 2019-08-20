@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">Portland</div>
+        <div class="catalog">
+            <div class="catalog__button"><i class="fas fa-list-ul"></i>Каталог</div>
+            <div class="catalog__list">
+                <ul class="list">
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <input type="text" class="search__input">
+        <div class="search__button"><i class="fas fa-search"></i></div>
+        <div class="cart__button">
+            <span class="cart__icon"><i class="fas fa-shopping-cart"></i></span>
+            <span class="cart__counter">0</span>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="filter">
+            <div class="filter__title">Фильтр</div>
+            <div class="filter__price">
+                <div class="price__title">Цена</div>
+                <div class="price__range">
+                    <label for="min">от</label>
+                    <input type="text" id="min">
+                    <label for="max">до</label>
+                    <input type="text" id="max">
+                </div>
+            </div>
+
+            <div class="filter__check">
+                <div class="check__item">
+                    <input type="checkbox" id='sale__checkbox'>
+                    <label for="">Акция</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <!-- <div class="cards__item">
+                    <div class="item__img">
+                        <img src="images/1033180284.jpg" alt="">
+                        <span class="item__sale">-15%</span>
+                    </div>
+                <div class="item__price">
+                    <span class="price__real">39200</span>
+                </div>
+                <div class="item__title">Игровая приставка Sony PlayStation 4 Pro</div>
+                <button class="item__button">В корзину</button>
+            </div>
+
+            <div class="cards__item">
+                <div class="item__img">
+                    <img src="images/1033180284.jpg" alt="">
+                    <span class="item__sale">-15%</span>
+                </div>
+                <div class="item__price">
+                    <span class="price--sale" >32700</span>
+                    <span class="price--through">39200</span>
+                </div>
+                <div class="item__title">Игровая приставка Sony PlayStation 4 Pro</div>
+                <button class="item__button">В корзину</button>
+            </div> -->
+        </div>
+    </section>
+
+    <div class="cart">
+        <div class="cart__inner">
+            <div class="cart__title">Корзина</div>
+            <div class="cart__total">Общая сумма:
+                <span id="cart__price">0</span> ₴
+            </div>
+            <div class="cart__wrapper">
+                <div id="cart--empty">Ваша корзина пуста</div>
+            </div>
+            <div class="order__button">Оформить заказ</div>
+            <div class="close__button">X</div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
